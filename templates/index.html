@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain WHOIS Lookup</title>
+</head>
+<body>
+    <h1>Domain WHOIS Lookup</h1>
+    <form method="post" action="/lookup">
+        <label for="domain_name">Domain Name:</label>
+        <input type="text" id="domain_name" name="domain_name" required>
+        <button type="submit">Lookup</button>
+    </form>
+    {% if domain_info %}
+    <h2>Domain Information:</h2>
+    <pre>{{ domain_info }}</pre>
+    {% endif %}
+</body>
+</html>

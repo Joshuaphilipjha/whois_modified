@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WHOIS Lookup Result</title>
+</head>
+<body>
+    <h1>WHOIS Lookup Result</h1>
+    {% if whois_data %}
+        <pre>{{ whois_data }}</pre>
+    {% else %}
+        <p>No data found for the specified domain.</p>
+    {% endif %}
+    <a href="/">Perform another lookup</a>
+</body>
+</html>
